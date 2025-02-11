@@ -6,11 +6,11 @@ SET @X = 0
 SET @Y = 0
 SET @Z = 0
 
-SELECT TOP(10) region.RegionName AS 'Имя региона', 
-	s.ProductName AS 'Имя продукта', 
-	s.productCount AS 'Объём Продаж', 
-	s.productSum AS 'Сумма продаж',
-	s.personCount AS 'Количество уникальных покупателей',
+SELECT TOP(10) region.RegionName AS 'Region name', 
+	s.ProductName AS 'Product name', 
+	s.productCount AS 'Product count', 
+	s.productSum AS 'Product sum',
+	s.personCount AS 'Persons count',
 	s.id
 FROM Region AS region
 CROSS APPLY
